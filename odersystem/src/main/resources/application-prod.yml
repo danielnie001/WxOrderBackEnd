@@ -1,3 +1,8 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /orderSystem
+
 spring:
   application:
     name: orderSystem
@@ -6,13 +11,16 @@ spring:
     url: jdbc:mysql://112.124.0.110:3306/order?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
     show-sql: true
     database: mysql
-    database-platform: org.hibernate.dialect.MySQLDialect
-server:
-  port: 8081
-  servlet:
-    context-path: /orderSystem
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+logging:
+  level:
+    com.bobo: debug
