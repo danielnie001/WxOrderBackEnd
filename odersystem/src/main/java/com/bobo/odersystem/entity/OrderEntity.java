@@ -22,6 +22,10 @@ import javax.persistence.*;
 @Builder
 public class OrderEntity extends BaseEntity{
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = -8717939944814269438L;
     @Id
     @GeneratedValue(generator = "hibernate-uuid")
     @GenericGenerator(name = "hibernate-uuid",strategy = "uuid")
