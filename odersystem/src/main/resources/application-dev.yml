@@ -22,5 +22,4 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
 
 logging:
-  level:
-    com.bobo: debug
+  config: classpath:logback-boot.xml
