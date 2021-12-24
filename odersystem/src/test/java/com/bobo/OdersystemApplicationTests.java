@@ -1,10 +1,7 @@
-package com.bobo.odersystem;
+package com.bobo;
 
-import com.bobo.odersystem.entity.OrderEntity;
-import com.bobo.odersystem.repository.OrderRepository;
-import lombok.AllArgsConstructor;
-import org.aspectj.weaver.ast.Or;
-import org.junit.jupiter.api.Order;
+import com.bobo.ordersystem.entity.OrderEntity;
+import com.bobo.ordersystem.repository.OrderRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

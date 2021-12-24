@@ -1,4 +1,4 @@
-package com.bobo.odersystem.entity;
+package com.bobo.ordersystem.entity;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;

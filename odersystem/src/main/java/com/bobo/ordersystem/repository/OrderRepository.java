@@ -1,6 +1,6 @@
-package com.bobo.odersystem.repository;
+package com.bobo.ordersystem.repository;
 
-import com.bobo.odersystem.entity.OrderEntity;
+import com.bobo.ordersystem.entity.OrderEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

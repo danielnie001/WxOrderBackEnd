@@ -1,4 +1,4 @@
-package com.bobo.odersystem.entity;
+package com.bobo.ordersystem.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
