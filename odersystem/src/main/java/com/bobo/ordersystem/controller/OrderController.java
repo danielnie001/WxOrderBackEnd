@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/orders")
 @AllArgsConstructor
-@Api(value = "订单系统")
+@Api(tags = "订单系统")
 public class OrderController {
 
     private static final Logger log = LoggerFactory.getLogger(OrderController.class);
 
-    @ApiOperation(value = "订单系统")
+    @ApiOperation(value = "订单系统", notes = "订单系统测试")
     @GetMapping("/hello")
     public String hello(){
         log.info("*********************** 打印日志 **************************");

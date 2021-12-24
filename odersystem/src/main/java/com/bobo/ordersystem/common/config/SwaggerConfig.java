@@ -32,7 +32,8 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.OAS_30).apiInfo(apiInfo)
                                                    .enable(swaggerEnabled)
                                                    .select()
-                                                   .apis(RequestHandlerSelectors.basePackage("com.bobo.ordersystem"))
+                                                   .apis(RequestHandlerSelectors.basePackage(
+                                                           "com.bobo.ordersystem.controller"))
                                                    .paths(PathSelectors.any())
                                                    .build()
                                                    .pathMapping("/");
